@@ -143,8 +143,7 @@ Optional timing:
 ### All in one 
 
 To have all the benchmark results computed in one step, run the following command:
-```bash benchmark.sh
-```
+```bash benchmark.sh```
 
 ## Key takeaway
 This repository is not about proving that one language is better than the other, but about understanding when and why 
