@@ -116,8 +116,9 @@ The benchmarks can be run locally in both languages.
 
 ### Python
 
-```python python/hello.py```
-```python python/compute.py```
+```python python/hello.py
+python python/compute.py
+```
 
 Optional timing:
 
@@ -127,17 +128,20 @@ Optional timing:
 
 Compile the Rust binaries (optimized mode):
 
-```cd rust/hello```
-```cargo build --release```
+```cd rust/hello
+cargo build --release
+```
 
 Run the binaries:
-```./target/release/hello```
-```./target/release/hello```
+```./target/release/hello
+./target/release/hello
+```
 
 Optional timing:
 ```time ./target/release/compute```
 
 ## Key takeaway
-This repository is not about proving that one language is better than the other, but about understanding when and why Rust can outperform Python, and how this difference matters in real-world MLOps pipelines.
-Python thinks fast.
-Rust executes fast
+This repository is not about proving that one language is better than the other, but about understanding when and why 
+- Rust can outperform Python, and how this difference matters in real-world MLOps pipelines.
+- Python thinks fast.
+- Rust executes fast
