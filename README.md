@@ -105,6 +105,7 @@ rust_python_benchmark/
 │               └── compute.rs
 │
 └── README.md
+```
 
 Python scripts are executed directly.
 Rust programs are compiled into native binaries before execution
