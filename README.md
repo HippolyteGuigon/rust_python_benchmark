@@ -140,6 +140,11 @@ Run the binaries:
 Optional timing:
 ```time ./target/release/compute```
 
+### All in one 
+
+To have all the benchmark results computed in one step, run the following command:
+```bash benchmark.sh```
+
 ## Key takeaway
 This repository is not about proving that one language is better than the other, but about understanding when and why 
 - Rust can outperform Python, and how this difference matters in real-world MLOps pipelines.
