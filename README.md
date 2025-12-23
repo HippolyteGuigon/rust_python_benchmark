@@ -29,7 +29,7 @@ The next steps of the project are:
 This repository is intentionally **simple and local-first**, in order to keep benchmarks understandable and reproducible.
 
 If you have suggestions, ideas, or improvements, feel free to reach out at  
-**Hippolyte.guigon@hec.edu** — I will be delighted to discuss and get feedback.
+**hippolyte.auguste.guigon@gmail.com** — I will be delighted to discuss and get feedback.
 
 ---
 
@@ -89,6 +89,7 @@ No virtual environment is needed for Rust: dependencies and builds are handled e
 
 ## Project structure
 
+```text
 rust_python_benchmark/
 │
 ├── python/
