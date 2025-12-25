@@ -1,7 +1,7 @@
 use rayon::prelude::*;
 use std::time::Instant;
 
-fn compute(n: u64) -> u64 {
+fn compute(n: u128) -> u128 {
     (0..n).map(|i| i * i).sum()
 }
 
@@ -11,7 +11,7 @@ fn main() {
 
     let start=Instant::now();
 
-    let result: u64 = (0..workers).into_par_iter().map(|_| compute(n)).sum();
+    let result: u128 = (0..workers).into_par_iter().map(|_| compute(n)).sum();
     let elapsed=start.elapsed();
 
     println!("Result: {}", result);
