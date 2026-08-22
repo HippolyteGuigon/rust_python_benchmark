@@ -97,12 +97,19 @@ rust_python_benchmark/
 │   └── compute.py
 │
 ├── rust/
-│   └── hello/
+│   ├── hello/               # Rust learning sandbox (basics, one bin per concept)
+│   │   ├── Cargo.toml
+│   │   └── src/
+│   │       ├── main.rs
+│   │       └── bin/
+│   │           └── variables.rs
+│   │
+│   └── compute/             # Benchmark binaries, mirrors python/
 │       ├── Cargo.toml
 │       └── src/
-│           ├── main.rs
 │           └── bin/
-│               └── compute.rs
+│               ├── compute.rs
+│               └── compute_parrallel.rs
 │
 └── README.md
 ```
@@ -130,15 +137,18 @@ Compile the Rust binaries (optimized mode):
 
 ```cd rust/hello
 cargo build --release
+cd ../compute
+cargo build --release
 ```
 
 Run the binaries:
-```./target/release/hello
-./target/release/hello
+```./rust/hello/target/release/hello
+./rust/compute/target/release/compute
+./rust/compute/target/release/compute_parrallel
 ```
 
 Optional timing:
-```time ./target/release/compute```
+```time ./rust/compute/target/release/compute```
 
 ### All in one 
 
