@@ -15,7 +15,7 @@ fn main() {
         None=>println!("L'élement 3 n'est pas dans le vecteur")
     }
 
-    match trouver_index(&nombres, 100){
+    match trouver_index(&nombres, 50){
         Some(index)=>println!("L'élement 100 se trouver à l'index : {}", index),
         None=>println!("L'élement 100 n'est pas dans le vecteur")
     }
